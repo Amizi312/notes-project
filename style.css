@@ -1,0 +1,117 @@
+body {
+	font-family: poppins;
+	font-size: 16px;
+	margin: 0px;
+    color: #000000;
+    background-image: url(assets/cork-board.jpg);
+    max-width: 100%;
+}
+
+h1, .h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px !important;
+}
+
+.form-box {
+	background-image: url(assets/to-do.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: auto auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 20ex;
+	height: 20ex;
+	font-size: 32px;
+	font-weight: 600;
+	text-align: center;
+}
+.form-box textarea {
+	background: transparent;
+    margin-top: 30px;
+    border: none;
+	width: 50%;
+    height:120px;
+	font-size: 16px;
+	font-family: poppins;
+}
+
+#allTasks{
+    position: relative;
+    top: 315px;
+}
+
+.fecha{
+    display: flex;
+    justify-content: center;
+}
+
+#dateStamp {
+    background: transparent;
+    border: none;
+	width: 30px;
+    height: min-content;
+    padding: 0px, auto;
+
+}
+#timeStamp {
+    background: transparent;
+    border: none;
+	width: min-content;
+    height: min-content;
+    padding: 0px, auto;
+}
+
+.note {
+    background-image: url(assets/note.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+	position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 20ex;
+	height: 20ex;
+    margin: 5px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+    padding: 0 5%;
+	height: 14ex;
+    word-wrap: break-word;
+    overflow:auto;
+    animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+#allTasks{
+    padding-top: 20px;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: left;
+}
+
+span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: left !important;
+
+}
+
+p > .glyphicon-remove{
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    left: 0px;
+}
+p:hover .glyphicon-remove{
+ visibility: visible;   
+}
